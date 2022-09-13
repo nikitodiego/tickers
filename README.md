@@ -1,6 +1,6 @@
 # tickers
 
-Aplicación de carga, actualización y visualización de datos financieros (Polygon API).
+Aplicación de carga, actualización y visualización de datos financieros (polygon.io Stocks APIs).
 
 Para correr el script, ejecutar en consola: python app.py
 
