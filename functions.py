@@ -16,7 +16,7 @@ def create_database(db_file):
         print(e)
     con.close()
     
-#Crea la tabla en la DB tickers.db, tomando como parámetro el nombre de la misma(ticker), con los siguientes campos:
+#Crea la tabla en la DB tickers.db, tomando como parámetro el nombre de la misma(nombre del ticker), con los siguientes campos:
 #clave primaria, fecha en formato unix almacenada como int, y el valor de cierre del activo en cuestión.
 def create_table(name):
     # Creamos una conexión con la base de datos
@@ -125,10 +125,7 @@ def resumen():
         con = sqlite3.connect("tickers.db")
         print('database connected..')
         cs = con.cursor()
-
-        sql_base = ''' 
-            SELECT name FROM sqlite_master WHERE type='table';
-            '''
+        sql_base = ''' SELECT name FROM sqlite_master WHERE type='table';'''
         recs = cs.execute(sql_base)
         for rec in recs:
             list.append(rec[0])
