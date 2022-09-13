@@ -1,6 +1,6 @@
 # tickers
 
-Aplicación de carga, actualización y visualización de datos financieros de la API Polygon.
+Aplicación de carga, actualización y visualización de datos financieros (Polygon API).
 
 Para correr el script, ejecutar en consola: python app.py
 
@@ -12,7 +12,7 @@ Se modulariza el código para separar la lógica de la aplicación de la persist
 
 Se utiliza la DB relacional portable SQLite (tickers.db).
 
-Como extras a la consigna, se desarrolla el manejo de errores y excepciones:
+Como extras a la consigna, se implementa el manejo de errores y excepciones:
 
 1- a nivel de aplicación (por ejemplo al ingresar opciones distintas a las del menú principal)
 
