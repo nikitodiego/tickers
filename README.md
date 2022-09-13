@@ -8,9 +8,9 @@ El archivo functions.py es un contenedor de funciones importadas en el archivo p
 
 En cada una de ellas se explica la funcionalidad (comments).
 
-Se modulariza el código para separar la lógica de la aplicación, de la persistencia.
+Se modulariza el código para separar la lógica de la aplicación de la persistencia.
 
-Se utiliza la DB portable SQLite (tickers.db).
+Se utiliza la DB relacional portable SQLite (tickers.db).
 
 Como extras a la consigna, se desarrolla el manejo de errores y excepciones:
 
