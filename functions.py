@@ -5,10 +5,9 @@ import json
 import datetime
 import matplotlib.pyplot as plt
 
-
+con = None
 #Crea la DB tomando como parámetro el nombre del archivo con extensión .db. En este caso ya fue creada.
 def create_database(db_file):
-    con = None
     try:
         con = sqlite3.connect(db_file)
         print(f"DB {db_file} created.")
